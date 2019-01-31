@@ -1,0 +1,266 @@
+body{
+  font-family:"Futura",sans-serif;
+  padding:2rem;
+  background-color:#EFFBF2;
+
+}
+
+.element{
+  padding-top:1rem;
+  padding-bottom:2rem;
+  border-top-style:dotted;
+  border-top-color: #F5DA81;
+}
+
+a{
+  color:black;
+}
+.main_nav a{
+  margin-right:10px;
+}
+
+.main_nav a:hover, .main_nav a:focus{
+  text-decoration:none;
+  background-color:#F5F6CE;
+}
+
+.nav-topic:hover, .nav-topic:focus{
+  background-color:#F5F6CE;
+  font-weight:bold;
+}
+h1{
+  font-size:40px;
+
+}
+
+h2{
+  margin-top:2rem;
+}
+
+h3{
+  font-weight: lighter;
+  font-style:italic;
+  margin-top:1rem;
+}
+
+h4{
+  margin-top:1rem;
+}
+
+p{
+  font-family: "optima",sans-serif;
+  font-weight: 100;
+}
+
+code{
+  background-color:#EEE;
+}
+
+.textstyle{
+  font-family:"optima",sans-serif;
+}
+
+nav a:hover , nav a:focus {
+  text-decoration:none;
+}
+
+#drinks:hover, #drinks:focus{
+  background-color:#F5F6CE;
+}
+
+.nav-main:hover, .nav-main:focus{
+  text-decoration:none;
+  background-color:#F5F6CE;
+}
+
+.nav-main{
+  margin-left:3rem;
+  margin-right:3rem;
+  text-decoration:none;
+  color:black;
+  font-family:"Futura",sans-serif;
+  font-size: 16px;
+}
+
+
+
+.img_link{
+  width:200px;
+}
+.icon{
+  position:relative;
+  width:5%;
+  padding-top:0.5rem;
+}
+
+.button-nav{
+  color:black;
+  background-color:#EEE;
+  border:1px dotted black;
+  text-align:center;
+  padding:0.5rem;
+  text-decoration:none;
+  word-spacing:0.5rem;
+}
+.button-nav:hover, .button-nav:focus{
+  background-color:#F5F6CE;
+}
+
+.contain{
+  position:relative;
+  width:80%;
+}
+
+.product {
+  opacity:1;
+  width:50%;
+  height:auto;
+  transition:.5s ease;
+}
+
+
+.container{
+  padding:5px;
+  width:100%;
+}
+
+
+input[type=text]{
+  width:95%;
+  margin-bottom:20px;
+  padding:12px;
+  border:1px solid #F5DA81;
+}
+
+
+.contain:hover .product{
+  opacity:0.5;
+  filter:blur(0.1rem);
+  transform:scale(0.8);
+  transform:scale(0.8);
+}
+
+
+.checkout{
+  display:block;
+  color:black;
+  padding:10px;
+  font-size:1.5rem;
+  width:60%;
+  margin:10px 0;
+}
+
+.checkout:hover{
+  background-color:#F5F6CE;
+}
+
+label{
+  margin-bottom:10px;
+  margin-left:5px;
+}
+
+
+
+span.price{
+  float: right;
+  margin-right:70%;
+  color:grey;
+}
+
+#Address:hover, #Address:focus{
+  background-color:#F5F6CE;
+}
+
+#City:hover, #City:focus{
+  background-color:#F5F6CE;
+}
+
+#State:hover, #State:focus{
+  background-color:#F5F6CE;
+}
+
+#Postcode:hover, #Postcode:focus{
+  background-color:#F5F6CE;
+}
+
+#Cardholder:hover, #Cardholder:focus{
+  background-color:#F5F6CE;
+}
+
+#Numberoncard:hover, #Numberoncard:focus{
+  background-color:#F5F6CE;
+}
+
+#Date:hover, #Date:focus{
+  background-color:#F5F6CE;
+}
+
+#Cvv:hover, #Cvv:focus{
+  background-color:#F5F6CE;
+}
+
+#citations li{
+  font-family: "Time New Roman",sans-serif;
+  font-size:10px;
+}
+
+.col-color{
+  display:flex;
+  flex-wrap:wrap;
+  flex-grow:1;
+  font-family: "optima", sans-serif;
+  font-size:10px;
+}
+
+.color5{
+  background-color:#EEE;
+  padding:5.8rem;
+}
+
+.color2{
+  background-color:#FBFBEF;
+  padding:5rem;
+}
+
+.color3{
+  background-color:#F5F6CE;
+  padding:5rem;
+}
+
+.color1{
+  background-color:#EFFBEF;
+  padding:5rem;
+}
+
+.color4{
+  background-color:#F5DA81;
+  padding:5rem;
+}
+
+
+@media screen and (max-width:800px){
+  .nav-main{
+    float: none;
+    width:100%;
+    margin-left:2px;
+    margin-right:2px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .nav-main {
+     font-size: 12px;
+  }
+  .checkout:hover{
+   font-size:20px;
+  }
+}
+/*
+citations:
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_flex-wrap
+https://html-color-codes.info/
+https://www.w3schools.com/howto/howto_css_checkout_form.asp
+https://www.w3schools.com/howto/howto_js_topnav.asp
+*/

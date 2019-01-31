@@ -1,0 +1,155 @@
+body{
+  font-family:"Futura",sans-serif;
+  padding:2rem;
+  background-color:#EFFBF2;
+}
+
+.image_icon{
+  position:relative;
+  width: 200px;
+  height:200px;
+  border:1px solid #EFFBF2;
+}
+
+.icon{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+.nav-main:hover, .nav-main:focus{
+  text-decoration:none;
+  background-color:#F5F6CE;
+}
+
+.nav-main{
+  text-decoration:none;
+  color:black;
+  font-family:"Futura",sans-serif;
+  font-size: 1em;
+}
+
+.nav_top{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom:2rem;
+  margin-left:3rem;
+  margin-right:3rem;
+}
+
+.container{
+  background-color:#F5F6CE;
+  padding:5px 20px 14px 20px;
+  width:100%;
+}
+.checkout{
+  display:block;
+  color:black;
+  padding:10px;
+  font-size:1.5rem;
+  width:60%;
+  margin:10px 0;
+}
+
+.checkout:hover{
+  background-color:#F5F6CE;
+}
+
+label{
+  margin-bottom:10px;
+  margin-left:5px;
+}
+
+input[type=text]{
+  width:95%;
+  margin-bottom:20px;
+  padding:12px;
+  border:2px dotted #ccc;
+}
+
+span.price{
+  float: right;
+  color:grey;
+}
+
+.formcheck{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.col50 {
+  flex:50%;
+  padding:0 20px;
+}
+
+.col30 {
+  margin-right:5%;
+  flex:30%;
+}
+
+#Cardholder:hover, #Cardholder:focus{
+  background-color:#EEE;
+}
+
+#Numberoncard:hover, #Numberoncard:focus{
+  background-color:#EEE;
+}
+
+#Date:hover, #Date:focus{
+  background-color:#EEE;
+}
+
+#Cvv:hover, #Cvv:focus{
+  background-color:#EEE;
+}
+
+@media screen and (max-width:800px){
+  .image_icon{
+    width:100px;
+    height:100px;
+  }
+  .nav-main{
+    margin:15px;
+  }
+
+  .formcheck{
+    flex-direction: column-reverse;
+  }
+  .col50{
+    margin-left: -1rem;
+    margin-right:-1.2rem;
+  }
+  .col30{
+    margin:0rem;
+  }
+
+}
+
+
+@media screen and (max-width:600px) {
+  .image_icon{
+    width:50px;
+    height:50px;
+  }
+
+  .nav_top{
+    display:grid;
+    margin-left: -1rem;
+  }
+  .checkout:hover{
+   font-size:18px;
+  }
+}
+
+/*
+citation
+https://stackoverflow.com/questions/19111879/css-margin-notation-top-right-bottom-left
+https://blog.csdn.net/liukuan73/article/details/51894476
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_flex-wrap
+https://html-color-codes.info/
+https://www.w3schools.com/howto/howto_css_checkout_form.asp
+https://www.w3schools.com/howto/howto_js_topnav.asp
+*/
