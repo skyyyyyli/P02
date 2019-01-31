@@ -26,6 +26,9 @@ body{
   padding:0.4rem 0.5rem 0.4rem 6rem;
 }
 
+nav a:hover{
+  color:grey;
+}
 header{
   padding-top:2rem;
   padding-bottom:2rem;
@@ -38,6 +41,8 @@ header{
 
 .nav-decoration h1{
   padding-left:6rem;
+  letter-spacing: 8px;
+  
 }
 
 .main{
