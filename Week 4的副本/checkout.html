@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style1.css">
+
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Energy Pumping</h1>
+
+      <nav class="nav_top">
+        <a class="nav-main" href="styleguide.html">Styleguide</a>
+        <a class="nav-main" href="product.html">Product</a>
+        <div class="image_icon">
+        <a href="styleguide.html"><img class="icon" src="img/water.png" alt="drinks"></a>
+        </div>
+        <a class="nav-main" href="checkout.html">Shopping Cart</a>
+        <a class="nav-main" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+   <div class="formcheck">
+     <div class="col30">
+       <h2>Checkout Cart</h2>
+       <div id="checkout_template">
+         <div class="container">
+
+
+         <h4>Cart</h4>
+         <p><a href='#ForestDrink'>Fresh Taste Drink</a><span class="price">$6.57</span></p>
+         <p><a href='#PeachDrink'>Peach Taste Drink</a><span class="price">$6.57</span></p>
+         <p><a href='#BlackDrink'>Wolong Taste Drink</a><span class="price">$6.57</span></p>
+         <p><a href='#LemonDrink'>Lemon Taste Drink</a><span class="price">$6.57</span></p>
+
+         <p>Total<span class="price"><b>$26.28</b></span></p>
+        </div>
+      </div>
+     </div>
+
+    <div class="col50">
+        <h2>Payment Form</h2>
+         <div class="container">
+
+
+           <h3> Payment Card</h3>
+           <form>
+             <label>Name on Card</label>
+             <input type="text" id="Cardholder" name="cardholder" placeholder="name">
+             <label>Card Number</label>
+             <input type="text" id="Numberoncard" name="number" placeholder="number">
+             <label>Expired Date</label>
+             <input type="text" id="Date" name="date" placeholder="MM/Year">
+             <label>CVV</label>
+             <input type="text" id="Cvv" name="cvv" placeholder="3 digital number on the back of the card">
+           </form>
+
+       </div>
+         <label>
+          <input type="checkbox" name="checkcheck" checked="checked">
+          Shipping Address is the same as Billing Address
+         </label>
+          <input type="submit" value="Process to Checkout" class="checkout">
+    </div>
+
+  </div>
+
+
+
+  </body>
+</html>

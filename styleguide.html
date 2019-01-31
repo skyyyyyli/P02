@@ -4,31 +4,318 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styleguide</title>
+    <title>NEITO | Styleguide</title>
     <link href="main.css" rel="stylesheet">
 
   </head>
 
   <body>
 
-      <div class="nav-main">
-      <header>
-      <nav class="nav-decoration">
-        <h1>NEITO</h1>
+<div class="nav-main">
+  <header>
+    <nav class="nav-decoration">
+      <h1>NEITO</h1>
+        <h2>Luxury Furniture</h2>
+        <nav class="nav_title">
         <a href="company.html">Neito Website</a>
         <a href="styleguide.html">Styleguide</a>
+
+        <nav class="nav_subtitle">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+      </nav>
+
         <a href="#citations">Citations</a>
       </nav>
-      </header>
-      </div>
+    </nav>
+  </header>
+</div>
 
     <div class="main">
-      <h4> The content on this page </h4>
+      <!-- <h4> The content on this page </h4> -->
       <ul>
-      <li><a href="#interactive_elements">Interactive Elements</a></li>
-      <li><a href="#text_elements">Text Elements</a></li>
-      <li><a href="#combined_elements">Combined Elements</a></li>
+      <!-- <li><a href="#interactive_elements">Interactive Elements</a></li> -->
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+
+        <section class="element">
+          <h3>In-text link</h3>
+          <h4>CSS selector</h4>
+          <code>.nav_main</code>
+
+          <h4>Sample code:</h4>
+          <code>&lt;li&gt;&lt;a href="concept.html"&gt;Concept&lt;/a&gt;&lt;/li&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a href="https://www.sfu.ca/" class="example_intextlink">Menu</a>
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector</h4>
+          <code>.button-nav</code>
+
+          <h4>Sample code:</h4>
+          <code>&lt;class="button-nav" href="#"&gt;Default Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-nav" href="#">Defalt Button</a>
+
+        </section>
+
+
+        <section class="element">
+          <h3>Submit/Reset Buttons</h3>
+          <a class="button-nav" href="#">Reset Buttons</a>
+
+        </section>
+
+
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+          <h4>CSS selector</h4>
+          <code>input</code>
+
+          <h4>Sample code:</h4>
+          <code>&lt;form&gt;&lt;label&gt;What is your favourite furniture?&lt;/label&gt;&lt;input type="text" id="drinks" placeholder="eg. chair, desk..."&gt;&lt;/form&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <form><label>What is your favourite furniture?  </label><input type="text" id="drinks" placeholder="eg.chair, desk..."></form>
+        </section>
+
+
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+
+          <h4>Sample code:</h4>
+          <code>&lt;input type="radio" name="buttonradio" value="buttons" id="blue"&gt;&lt;label for="blue"&gt;blue&lt;/label&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <form>
+            <input type="radio" name="buttonradio" value="buttons" id="blue"><label for="blue">blue</label>
+            <input type="radio" name="buttonradio" value="buttons" id="yellow"><label for="yellow">yellow</label>
+            <input type="radio" name="buttonradio" value="buttons" id="red"><label for="red">red</label>
+          </form>
+        </section>
+
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+          <h4>CSS selector</h4>
+          <code>.img_link</code>
+
+          <h4>Sample code:</h4>
+          <code>&lt;img class="img_link" src="https://i.pinimg.com/originals/8f/5d/e9/8f5de9e6e6f4e65617b47fe3b8d7e062.jpg" alt="glass chair" height="250rem"&gt;&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="container">
+            <a href="https://i.pinimg.com/originals/8f/5d/e9/8f5de9e6e6f4e65617b47fe3b8d7e062.jpg">
+              <img class="img_link" src="https://i.pinimg.com/originals/8f/5d/e9/8f5de9e6e6f4e65617b47fe3b8d7e062.jpg" alt="glass chair" height="250rem">
+            <div class="overlay">
+              <div class="text_on_image">Learn More>></div>
+            </div>
+            </a>
+          </div>
+
+        </section>
+
+
+      </section>
+      <br><br><br><br><br><br>
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <section class="element">
+          <h3>Typeface</h3>
+          <div class="optima_example">
+          <h4>Optima sans-serif</h4>
+        </div>
+        </section>
+
+        <section class="element">
+          <h3>Font</h3>
+          <h4>CSS selector</h4>
+          <code>.optima_example</code>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h1&gt;Heading1&lt;/h1&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="optima_example">
+          <h1>Heading1</h1>
+          <h2>Heading2<h2>
+          <h3>Heading3</h3>
+          <h4>Heading4</h4>
+          <h5>Heading5</h5>
+        </div>
+        </section>
+
+        <section class="element">
+          <h3>Basic branding ideas:</h3>
+          <p>Neito is a Japanese design furniture and decoration company in the Vancouver,
+            dedicated to creating a comfortable and simply living environment.
+            We offer our clients popular works from leading Japanese designers;
+            and exclusive insights into the most relevant products and brands in Canada today.</p>
+            <p>By showing examples of the most innovative lifestyles observed in various furniture
+            product designs and interior design - Neito aims to provide a more innovative,
+            Japanese and Canadian style of products that make people's rooms more lively and comfortable.</p>
+
+        </section>
+
+        <section class="element">
+          <h3>Color palettes</h3>
+          <div class="col-color">
+          <div class="color1">#EEE   </div>
+          <div class="color2">#808080</div>
+          <div class="color3">#D3D3D3</div>
+          <div class="color4">#dbdbdb</div>
+          <!-- <div class="color5">#F5F6CE</div>
+          <div class="color5">#F5F6CE</div> -->
+        </div>
+      </section>
+        <section class="element">
+          <h3>Art direction & Fonts</h3>
+          <p>We intend to use minimalist and sophisticated typography to ensure a smooth overall effect
+            while matching our theme product design. White and grey elements will be interspersed in the
+            layout of the overall design. The fonts we choose are Optima & Din Pro. All these two fonts are
+            sans-serif font and then conform to the spirit of minimalist and comfortable.</p>
+
+            <p>Our goal is to present elaborate but simple designs through clean layouts and various interior design pattern.
+              Thus we choose a low saturation of white and black to use from shallow to deep.
+              Colors with low saturation can visually give people a more layered feel and are easier to match with other elements.
+              This is also in line with the purpose of our company.</p>
+        </section>
+      </section>
+
+      <br><br><br><br><br><br>
+
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+        <section class="element">
+          <div id="product_list">
+          <h3>Product Listing</h3>
+          <div class="contain">
+              <figure>
+                <div class="container_productlist">
+                  <a href="#GlassChair">
+                    <img class="product" src="https://i.pinimg.com/originals/8f/5d/e9/8f5de9e6e6f4e65617b47fe3b8d7e062.jpg" alt="glass chair" height="250rem">
+                  </a>
+                  </div>
+                  <p>Glass Chair</p>
+                  <p>Price:$96.57</p>
+                </figure>
+          </div>
+
+          <div class="contain">
+              <figure>
+                <div class="container_productlist">
+                  <a href="#MoonChair">
+                    <img class="product" src="https://static.dezeen.com/uploads/2011/02/dzn_Moon-by-Tokujin-Yoshioka-for-Moroso-1.jpg" alt="moon chair" height="250rem">
+                  </a>
+                  </div>
+                  <p>Moon Chair</p>
+                  <p>Price:$96.57</p>
+                </figure>
+          </div>
+
+          <div class="contain">
+              <figure>
+                <div class="container_productlist">
+                  <a href="#TofuLamp">
+                    <img class="product" src="http://www.artnet.com/WebServices/images/ll00014lldvKjGFgneECfDrCWvaHBOcQbxC/tokujin-yoshioka-tofu-table-lamp.jpg" alt="tofu lamp" height="250rem">
+                  </a>
+                  </div>
+                  <p>Tofu Lamp</p>
+                  <p>Price:$96.57</p>
+                </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+         <div class="container">
+           <h4>Billing Address</h4>
+           <form>
+             <label>Address</label>
+             <input type="text" id="Address" name="address" placeholder="where">
+             <label>City</label>
+             <input type="text" id="City" name="city" placeholder="Vancouver">
+             <label>State</label>
+             <input type="text" id="State" name="state" placeholder="BC">
+             <label>Postcode</label>
+             <input type="text" id="Postcode" name="postcode" placeholder="V5T">
+           </form>
+         </div>
+
+         <div class="container">
+           <h4> Payment Card</h4>
+
+             <label>Name on Card</label>
+             <input type="text" id="Cardholder" name="cardholder" placeholder="name">
+             <label>Card Number</label>
+             <input type="text" id="Numberoncard" name="number" placeholder="number">
+             <label>Expired Date</label>
+             <input type="text" id="Date" name="date" placeholder="MM/Year">
+             <label>CVV</label>
+             <input type="text" id="Cvv" name="cvv" placeholder="3 digital number on the back of the card">
+         </div>
+           <label>
+            <input type="checkbox" name="checkcheck" checked="checked">
+            Shipping Address is the same as Billing Address
+           </label>
+            <input type="submit" value="Process to Checkout" class="checkout">
+
+      </section>
+
+      <section class="element" id="checkout_template">
+        <div class="container">
+        <h3>Checkout Cart</h3>
+        <hr>
+        <h4>Cart</h4>
+        <p><a href='#GlassChair'>Glass Chair</a><span class="price">$96.57</span></p>
+        <p><a href='#MoonChair'>Moon Chair</a><span class="price">$96.57</span></p>
+        <p><a href='#TofuLamp'>TofuLamp</a><span class="price">$96.57</span></p>
+        <!-- <p><a href='#LemonDrink'>Lemon Taste Drink</a><span class="price">$6.57</span></p> -->
+        <p>Total<span class="price"><b>$289.72</b></span></p>
+       </div>
+      </section>
+
+      </section>
+
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <section class="element" >
+      <div id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>W3Schools Online Web Tutorials. Retrieved from https://www.w3schools.com/</li>
+        <li>元気森林. Retrieved from http://www.yuanqisenlin.com/</li>
       </ul>
-    </div>
+
+      </div>
+    </section>
+
+
+
+
+
+      </section>
+    </ul>
+  </div>
+
+
+
   </body>
 </html>

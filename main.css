@@ -5,7 +5,9 @@ body{
   margin:0;
 }
 
-
+ul{
+  padding-left: 5rem;
+}
 .nav-main{
   height:100%;
   width:20%;
@@ -29,6 +31,10 @@ body{
 nav a:hover{
   color:grey;
 }
+
+.nav_title a{
+  padding-top: 1rem;
+}
 header{
   padding-top:2rem;
   padding-bottom:2rem;
@@ -36,19 +42,72 @@ header{
 
 .nav-decoration{
   padding-right:2rem;
-  padding-left:2rem;
+  padding-left:0.5rem;
 }
 
 .nav-decoration h1{
-  padding-left:6rem;
+  padding-left:5rem;
   letter-spacing: 8px;
-  
+  font-size: 40px;
+  margin: 0;
 }
 
+.nav-decoration h2{
+  padding-left:5.1rem;
+  letter-spacing: 5px;
+  font-size: 10px;
+  margin: 0;
+}
+
+.nav_title{
+  margin-top: 5rem;
+}
+
+.nav_subtitle{
+  padding-left:1.2rem;
+  /* letter-spacing: 8px; */
+  font-size: 12px;
+}
+
+.element{
+  padding-top:1rem;
+  padding-bottom:2rem;
+  border-top-style:dotted;
+  border-top-color: lightgrey;
+}
 .main{
   margin-left:22%;
   padding:0rem 0.625rem;
   max-width:45rem;
+}
+
+.example_intextlink{
+  display:inline-block;
+  color:black;
+  text-align:center;
+  text-decoration:none;
+  margin:0rem;
+  font-family: "Optima", sans-serif;
+}
+
+a:hover {
+  background-color: #EEE;
+}
+
+
+.button-nav {
+  font-family: "Optima", sans-serif;
+  display: inline-block;
+  padding: 0.8rem;
+  color: white;
+  background-color:#dbdbdb ;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200) ;
 }
 
 @media screen and (max-width:950px){
@@ -78,4 +137,166 @@ header{
    margin:1rem;
   }
 
+}
+
+code{
+  background-color:#EEE;
+}
+
+input[type=text]{
+  font-family: "Optima", sans-serif;
+  width:95%;
+  margin-bottom:20px;
+  padding:12px;
+  border:1px solid lightgrey;
+}
+
+input:focus, input:hover{
+  background-color: #EEE;
+}
+
+input,form,label{
+  font-family: "Optima", sans-serif;
+}
+.container {
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 65%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity:0.85;
+}
+
+
+
+.text_on_image {
+  color:#afafaf;
+  font-family: "Optima", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.element h1{
+  font-size: 1.8rem;
+}
+.optima_example {
+  font-family: "Optima", sans-serif;
+}
+
+.col-color{
+  display:flex;
+  flex-wrap:nowrap;
+  flex-grow:1;
+  font-family: "optima", sans-serif;
+  font-size:10px;
+}
+
+/* .color5{
+  background-color:#EEE;
+  padding:5.8rem;
+} */
+.color1{
+  background-color:#EEE;
+  padding:5rem;
+}
+
+.color2{
+  background-color:#dbdbdb;
+  padding:5rem;
+}
+
+.color3{
+  background-color:#D3D3D3;
+  padding:5rem;
+}
+
+.color4{
+  background-color:#808080;
+  padding:5rem;
+}
+
+.contain{
+  position:relative;
+  width:100%;
+}
+
+.product {
+  opacity:1;
+  width:50%;
+  height:20rem;
+  transition:.5s ease;
+}
+.contain:hover .product{
+  opacity:0.5;
+  filter:blur(0.1rem);
+  transform:scale(0.8);
+  transform:scale(0.8);
+}
+figure{
+  width: 100%;
+  margin-left: 0rem;
+  margin-right: 50rem;
+}
+
+span.price{
+  float: right;
+  margin-right:20%;
+  color:grey;
+}
+.checkout {
+    background-color: lightgrey;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+#checkout_template a{
+text-decoration: none;
+color: black;
+}
+
+#checkout_template a:hover{
+text-decoration: none;
+color: grey;
+background-color: white;
+}
+
+#citations a{
+text-decoration: none;
+color: black;
+}
+
+#interactive_elements{
+  margin-top: 3rem;
+}
+#interactive_elements h2{
+  margin-top: 4rem ;
 }
