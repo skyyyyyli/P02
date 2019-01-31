@@ -1,9 +1,15 @@
 body{
-  font-family: "Futura", sans-serif;
+  font-family: "optima", sans-serif;
   text-align: left;
   overflow-x:hidden;
   margin:0;
 }
+
+/*
+h1,h2,h3{
+  font-family:"DIN_Medium", sans-serif;
+}
+*/
 
 ul{
   padding-left: 5rem;
