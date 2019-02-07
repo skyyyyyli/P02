@@ -1,10 +1,12 @@
 ul{
+  float:right;
   list-style-type: none;
   overflow:hidden;
 }
 
 li{
-  float:right;
+  display: inline;
+  /* float: left; */
 }
 
 li a{
