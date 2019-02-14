@@ -46,13 +46,11 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  /*background: #EEE;*/
   color: #848484;
   text-decoration: none;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  /*background: #EEE;*/
   color: #D8D8D8;
 }
 nav ul li a:not(:only-child):after,
@@ -165,6 +163,7 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
+/*
 article {
   max-width: 1000px;
   margin: 0 auto;
@@ -173,60 +172,263 @@ article {
 /*finish Navigation Bar*/
 
 /*footer*/
-
-.footer{
-  display:inline-block;
-  font-family:"DINPro",sans-serif;
-  background-color: #EEE;
-  width:100%;
-  text-align:left;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 92px;
-  color: #848484;
-  text-transform: uppercase;
-  letter-spacing: .18em;
-}
-.footer h2{
-  font-weight: 400;
-  font-size: 0.8em;
-  word-spacing:5px;
+.footer-distributed{
+	background-color: #D8D8D8;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 55px 60px;
+	margin-top: 80px;
 }
 
-.footer p{
-  font-weight: lighter;
-  font-size:0.3em;
-  letter-spacing: 1px;
+.footer-distributed p a:hover,
+.footer-center div p a:hover,
+.footer-center div p:hover,
+.footer-center p span:hover{
+  cursor: pointer;
+  color:#F2F2F2;
 }
 
-.footer ul{
-  list-style: none;
-  font-size:0.5em;
-  font-weight: 400;
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
-.footer img{
-  width:10px;
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
 }
 
-.footer li:hover,
-.footer p:hover{
-  color: #D8D8D8;
-}
-/*footer grid*/
-.col-25{
-  background-color: orange;
-  width:25%;
+/* The company logo */
+
+.footer-distributed h3{
+  display: inline-block;
+	color:#2E2E2E;
+	font: 400 30px 'DINPro', sans-serif;
+  letter-spacing: 2px;
+	margin: 0;
 }
 
-.col-50{
-  background-color:yellow;
-  width:25%;
-  /*margin-left: 30%;*/
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #848484;
+	margin: 20px 0 12px;
+  font: lighter 15px 'optima', sans-serif;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #848484;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #848484;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+  font-family: "DINPro",sans-serif;
+	font-size: 13px;
+	font-weight: lighter;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #848484;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* footer responsive */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: -10px;
+	}
 
 }
-.col-75{
-  background-color:green;
-  width:25%;
-  /*margin-left: 60%;*/
+/* finish footer part*/
+
+/*body*/
+/*
+.body_part{
+  padding:0;
+  margin:0;
+  min-width: 980px;
+}
+*/
+
+#intro{
+  background:url(img/pico.jpg) 50% 0 no-repeat fixed;
+  color:#6E6E6E;
+  height:800px;
+  margin:0 auto;
+  padding:0;
+}
+
+#second{
+  background:url(img/rollingwork.jpg) 50% 0 no-repeat fixed;
+  color:#6E6E6E;
+  height:1300px;
+  margin:0 auto;
+  overflow:hidden;
+  padding:0;
+}
+
+#third{
+  background:url(img/third.jpg) 50% 0 no-repeat fixed;
+  color:#6E6E6E;
+  height:650px;
+  padding:100px 0 0 0;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;
+}
+
+@media (max-width: 880px) {
+  #intro{
+   background:url(img/pico.jpg) 30% 0 no-repeat fixed;
+  }
+
+  .float-right{
+  	float: left;
+    margin:0;
+  }
+
+  #second{
+   background:url(img/rollingwork.jpg) 20% 0 no-repeat fixed;
+  }
+
+  #third{
+   background:url(img/third.jpg) 20% 0 no-repeat fixed;
+  }
 }
