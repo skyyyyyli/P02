@@ -178,8 +178,8 @@ article {
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	padding: 55px 60px;
-	margin-top: 80px;
+	padding-top: 50px;
+	margin-top: 70px;
 }
 
 .footer-distributed p a:hover,
@@ -354,8 +354,165 @@ article {
 /* finish footer part*/
 
 /*body*/
+.contactlist{
+  max-width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#feedback{
+  margin:3rem auto;
+  overflow:hidden;
+  background-color: #F2F2F2;
+  font-family: "DINPro",sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.contact {
+  /*width:100%;*/
+  padding-top: 0.8em;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  margin-top: 1em;
+}
 
 
-/*citation
-https://www.w3schools.com/howto/howto_css_parallax.asp
-*/
+label {
+    display: block;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #4C4C4C;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type=text],input[type=email]{
+    width:100%;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    border-bottom: 2px solid #282c37;
+    padding: 0.625rem 0.5rem 0.5rem 0.5rem;
+}
+
+input[type=message], textarea{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 0.625rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+.btn {
+    background-color: #fff;
+    border-width: medium;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #D8D8D8;
+}
+/*info*/
+
+.bottom-section {
+  padding-top: 20px;
+  padding-bottom:10rem;
+  font-family: "DINPro",sans-serif;
+  font-weight: 200;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+.circle{
+  background-color:#ffffff ;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #282c37;
+  padding-bottom: 7px;
+  margin: 0 auto 30px;
+  width: 55px;
+  height:50px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.circle :hover{
+  background-color:#F6E3CE;
+  border-radius: 50%;
+  padding-bottom: 7px;
+  margin: 0 auto 30px;
+  width: 55px;
+  height:50px;
+}
+
+.footer-images img{
+  width:40px;
+  height:40px;
+  margin-top:10px;
+}
+
+
+.col-md-4 p{
+  font-size: 11px;
+  line-height: 1.75;
+  color: #282c37;
+
+}
+
+@media (min-width: 992px){
+.col-md-4 {
+    width: 33.33333333%;
+    float:left;
+
+  }
+}
+
+@media(max-width:900px){
+  .col-md-4{
+    margin-bottom: 2rem;
+    width:100%
+  }
+}
+
+@media (max-width: 790px) {
+
+  .col-md-4{
+    width:100%;
+    height:100%;
+
+  }
+
+
+  .contactlist{
+  max-width: 100%;
+  }
+}

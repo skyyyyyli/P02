@@ -8,12 +8,6 @@
     <title>NEITO | Luxury Furniture</title>
     <link rel="stylesheet" href="stylelist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="scripts/img.js"></script>
-    <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
   </head>
 
 
@@ -59,11 +53,16 @@
   </div>
 </section>
 
-<div class="body_part">
-<div id="intro">
-  <div class="story">
-      <div class="float-left">
-        <h2>Brand Ideas</h2>
+<section id="body">
+
+  <div class="img_shop">
+  <img src="img/shop.jpg" alt="shop"></img>
+  </div>
+
+ <div class="flex-responsive">
+  <div class="flex-viewport">
+       <div class="slides">
+        <h2 class="arrow">Brand Ideas</h2>
         <p>Neito is a Japanese design furniture and decoration company in the Vancouver,
           dedicated to creating a comfortable and simply living environment.
           We offer our clients popular works from leading Japanese designers;
@@ -74,30 +73,27 @@
           Japanese and Canadian style of products that make people's rooms more lively and comfortable.</p>
 
         </div>
-    </div>
-</div>
-
-
-<div id="third">
-  <div class="story">
-      <div class="float-left">
-          <h2>Art Direction</h2>
+        <div class="slides">
+          <h2 class="arrow">Art Direction</h2>
             <p>We intend to use minimalist and sophisticated typography to ensure a smooth overall effect
               while matching our theme product design. White and grey elements will be interspersed in the
               layout of the overall design. The fonts we choose are Optima & Din Pro. All these two fonts are
               sans-serif font and then conform to the spirit of minimalist and comfortable.</p>
-        </div>
+       </div>
+       </div>
+
+       <div class="tab-menu">
+       <ol class="flex-control-nav flex-control-paging">
+          <li class="active"><a class="">1</a></li>
+          <li><a class="flex-active">2</a></li>
+        </ol>
+      </div>
     </div>
-</div>
-
-</div>
-
-<section id="body_part">
-  <div class="img_shop">
-  <img src="img/shop.jpg" alt="shop"></img>
-  </div>
- 
 </section>
+
+
+
+
 
 <footer class="footer-distributed">
 
@@ -164,5 +160,19 @@
   </div>
 
 </footer>
+
+<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="scripts/menu.js"></script>
+<script type="text/javascript" src="scripts/img.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.tab-menu li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+//          $('.tab-top li').eq($(this).index()).addClass('active').siblings().removeClass('active');  tab按钮第二种写法
+            var index=$(this).index();
+            $(".flex-viewport div").eq(index).show().siblings().hide();
+        })
+    })
+</script>
 </body>
 </html>
