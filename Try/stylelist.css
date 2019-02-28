@@ -361,11 +361,12 @@ p{
 }
 
 .img_shop{
+  flex:50%;
   padding-top: 5%;
 }
 
 .flex-responsive{
-  width:40%;
+  flex:30%;
   padding-top: 3%;
   padding-left: 3%;
 }
@@ -416,4 +417,19 @@ p{
 .tab-menu ol li a:hover {
   background: #fff;
   background: #212024;
+}
+
+@media screen and (max-width:800px){
+
+  #body{
+    flex-direction: column;
+  }
+  .img_shop{
+    margin-left: -1rem;
+    margin-right:-1.2rem;
+  }
+  .flex-responsive{
+    margin:0rem;
+  }
+
 }
