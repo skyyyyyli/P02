@@ -2,7 +2,6 @@
 /* Navigation Bar Design*/
 .navigation {
   height: 70px;
-  /*background: orange;*/
 }
 
 .brand {
@@ -10,7 +9,6 @@
   font-weight: lighter;
   letter-spacing: 5px;
   position: absolute;
-  /*padding-left: 10px;*/
   float: left;
   line-height: 70px;
   text-transform: uppercase;
@@ -178,7 +176,7 @@ article {
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	padding: 55px 60px;
+	padding-top: 50px;
 	margin-top: 80px;
 }
 
@@ -361,6 +359,45 @@ article {
   min-width: 980px;
 }
 */
+p{
+  font-family: "optima",sans-serif;
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.float-left h2{
+  font-family: "DINPro",sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.button-nav {
+    font-family: "DINPro",sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0.7rem 1.3rem;
+    margin-bottom: 1rem;
+    color:#FFFFFF;
+    background-color: #585858;
+    transition-property:all;
+    transition-duration: 0.2s;
+    border-radius: 8px;
+    opacity: 1;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #848484;
+  background-color: #E6E6E6;
+}
+
 
 #intro{
   background:url(img/pico.jpg) 50% 0 no-repeat fixed;
